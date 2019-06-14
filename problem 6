@@ -2,7 +2,7 @@
 
 choice = int(input("Enter you Choice : \n 1. Cat \t2.Cat -b\t3.Cat -n\t4.Cat -E\n:"))
 
-file=open("demofile.txt","r")
+file=open("nid.txt","r")
 if choice==1:
     print(file.read())
 elif choice==2:
