@@ -1,6 +1,6 @@
 
 
-choice = int(input("Enter you Choice : \n 1. Cat \t2.Cat -b\t3.Cat -s\t4.Cat -E\n:"))
+choice = int(input("Enter you Choice : \n 1. Cat \t2.Cat -b\t3.Cat -n\t4.Cat -E\n:"))
 
 file=open("demofile.txt","r")
 if choice==1:
