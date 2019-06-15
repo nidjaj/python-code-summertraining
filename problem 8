@@ -1,0 +1,22 @@
+Question 
+write a code that will take input from a user and check that if it is a command
+then execute it with following  conditions :
+
+ i)  all the commands given by user either wrong or right must be store in a file
+ii)   output of success command will be shown to monitor
+iii)  if the input command is repeated by user give him voice note not to do this again
+solution 
+#!/usr/bin/python3
+
+import os
+no_repeat = []
+for i in range(3):
+
+	command = input('Enter a command: ')
+	if command in no_repeat:
+		os.system("echo Don't Repeat the command again | festival --tts")
+	else:
+		no_repeat.append(command)
+		os.system(command+' 2>error.txt')
+		os.system(command+' &> command.txt')
+	os.system('rm -r error.txt')
